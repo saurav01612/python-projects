@@ -1,7 +1,7 @@
 Name : Saurav
  
- Enrollment number : 2402309119
+ Enrollment Number : 2402309119
 
 Class/Section : BCA 5A
 
-Program Complete: 15/15
+Programs Complete: 15/15

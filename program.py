@@ -1,11 +1,12 @@
 import cv2
+import numpy as np
 
 img = cv2.imread("input.jpg")
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+increase = 50
 
-print("Original image shape:", img.shape)
-print("Grayscale image shape:", gray.shape)
-print("Height:", img.shape[0])
-print("Width:", img.shape[1])
+enhanced = cv2.add(img, np.full(img.shape, increase, dtype=np.uint8))
 
-cv2.imwrite("output.png", gray)
+print("Pixel before:", img[100, 100])
+print("Pixel after :", enhanced[100, 100])
+
+cv2.imwrite("output.png", enhanced)
